@@ -1,18 +1,23 @@
 @font-face {
-  font-family: 'Monserrat';
-  src: url('./assets/fonts/Montserrat.woff2');
+  font-family: "Monserrat";
+  src: url("./assets/fonts/Montserrat.woff2");
 }
 
 :root {
-  --body_background: #101010;
+  --body_background: #121212;
   --body_color: #fff;
   --heading_color: #ffe400;
 }
 
-[data-theme='light'] {
-  --body_background: #fff;
+[data-theme="light"] {
+  --body_background: #fafafa;
   --body_color: #000;
   --heading_color: #000;
+}
+[data-theme="dark"] {
+  --body_background: #121212;
+  --body_color: #fff;
+  --heading_color: #ffe400;
 }
 * {
   margin: 0;
@@ -25,9 +30,12 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
   background-color: var(--body_background);
   color: var(--body_color);
-  font-family: 'Monserrat', sans-serif;
+  font-family: "Monserrat", sans-serif;
 }
 
 .align_center {

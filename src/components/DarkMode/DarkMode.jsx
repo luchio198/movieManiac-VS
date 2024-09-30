@@ -1,22 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import './DarkMode.css';
-import Sun from '../../assets/Sun.svg?react';
-import Moon from '../../assets/Moon.svg?react';
+import "./DarkMode.css";
+import Sun from "../../assets/Sun.svg?react";
+import Moon from "../../assets/Moon.svg?react";
+import { useTheme } from "../Context/ThemeContext";
 
 const DarkMode = () => {
-  const setDarkTheme = () => {
-    document.querySelector('body').setAttribute('data-theme', 'dark');
-  };
-  const setLightTheme = () => {
-    document.querySelector('body').setAttribute('data-theme', 'light');
-  };
+  const { setDarkTheme, setLightTheme } = useTheme();
 
   const toggleTheme = (e) => {
     if (e.target.checked) {
-      setDarkTheme();
-    } else {
       setLightTheme();
+    } else {
+      setDarkTheme();
     }
   };
 

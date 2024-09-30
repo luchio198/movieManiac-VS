@@ -35,3 +35,8 @@
   height: 25px;
   margin-left: 7px;
 }
+
+.navbar_title {
+  color: var(--heading_color);
+  text-decoration: none;
+}

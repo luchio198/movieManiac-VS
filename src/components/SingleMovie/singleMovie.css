@@ -1,0 +1,107 @@
+.single-movie-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.single-movie-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.1);
+  transition: box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.single-movie-info {
+  width: 63%;
+}
+
+.single-movie-poster {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.single-movie-title {
+  font-size: 4em;
+  font-weight: 600;
+  color: #ffe400;
+  margin-bottom: 1%;
+}
+.single-movie-light-title {
+  font-size: 4em;
+  font-weight: 600;
+  color: "black";
+  margin-bottom: 1%;
+}
+
+.single-movie-tagline {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #ffe400;
+  margin-bottom: 5%;
+}
+.single-movie-light-tagline {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: "black";
+  margin-bottom: 5%;
+}
+
+.single-movie-overview {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 40px 0;
+  margin-bottom: 5%;
+}
+
+.single-movie-card-stars {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+}
+
+.star-emoji {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.div-vote-average {
+  font-size: 25px;
+  color: var(--heading_color);
+}
+
+.single-movie-card-companies {
+  display: "flex";
+  justify-content: "space-between";
+  align-items: "center";
+  flex-wrap: "wrap";
+  padding: "20px";
+  margin-top: 40px;
+}
+
+.production-companies-title {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
